@@ -1,10 +1,11 @@
 import { CheckCircle } from "lucide-react";
+import { FaArrowRight } from "react-icons/fa";
 
 function PricingCard({ title, price, features, isPopular }) {
   return (
     <div
       className={`flex flex-col justify-between p-8 rounded-2xl border
-      ${isPopular ? "border-primary shadow-lg" : "border-border"}
+      ${isPopular ? "border-primary shadow-lg" : "border-primary shadow-lg"}
       bg-background w-full max-w-sm min-h-[600px] transition hover:scale-105`}
     >
       <div>
@@ -33,10 +34,14 @@ function PricingCard({ title, price, features, isPopular }) {
           ))}
         </ul>
       </div>
-
-      <button className="mt-8 bg-primary hover:bg-primary/90 text-background py-3 rounded-full font-semibold flex justify-center items-center gap-2">
-        Get Started →
-      </button>
+      <div className="flex justify-start gap-4">
+        <button
+          type="button"
+          className="flex items-center gap-2 bg-primary hover:bg-primary/90 text-background py-3 px-6 rounded-full font-semibold"
+        >
+          Get Started <FaArrowRight className="w-4 h-4" />
+        </button>
+      </div>
     </div>
   );
 }

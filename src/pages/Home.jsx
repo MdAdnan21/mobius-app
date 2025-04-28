@@ -80,7 +80,6 @@ const Home = () => {
         </nav>
 
         <section className="relative min-h-screen flex flex-col md:flex-row items-center justify-evenly  md:px-20 bg-gradient-to-br from-[var(--background-start)] via-[var(--background-mid)] to-[var(--background-end)] pt-20 pb-10">
-          {/* Left Content */}
           <div className="flex flex-col max-w-2xl text-center md:text-left">
             <h1 className="text-4xl md:text-7xl font-bold leading-tight text-white mb-6">
               Land job interviews <br />
@@ -97,16 +96,13 @@ const Home = () => {
             </button>
           </div>
 
-          {/* Right Side: E-book Image + Download */}
           <div className="relative flex flex-col items-center mt-16 md:mt-0">
-            {/* E-book main image */}
             <img
               src="/images/prospective.png"
               alt="Hiring Trends 2024/2025"
               className="w-[300px] md:w-[360px] shadow-2xl rounded-lg"
             />
 
-            {/* Floating E-Book Icon */}
             <div className="absolute -bottom-12 flex flex-col items-center">
               <div className="p-1 shadow-lg">
                 <img

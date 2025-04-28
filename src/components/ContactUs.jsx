@@ -1,26 +1,22 @@
-import { Linkedin } from "lucide-react";
 import { ArrowRight } from "lucide-react";
-import { LiaLinkedin, LiaLinkedinIn } from "react-icons/lia";
+import { LiaLinkedinIn } from "react-icons/lia";
 
 export const ContactUsBanner = () => {
   return (
     <>
       <div className="bg-primary text-white rounded-3xl flex items-center justify-between px-10 py-24 w-full max-w-6xl mx-auto">
-        {/* Left Text */}
         <div className="text-left">
-          <p className="text-lg font-semibold uppercase leading-tight">
+          <p className="text-3xl font-medium uppercase leading-tight">
             Still have <br /> doubts?
           </p>
         </div>
 
-        {/* Center Text */}
         <div className="text-center">
-          <h2 className="text-3xl font-bold">Contact us</h2>
+          <h2 className="text-6xl font-bold">Contact us</h2>
         </div>
 
-        {/* Right Arrow Button */}
         <button className="bg-white text-primary rounded-full p-4">
-          <ArrowRight className="w-6 h-6" />
+          <ArrowRight className="w-8 h-8" />
         </button>
       </div>
       <div className="w-full">
@@ -32,18 +28,19 @@ export const ContactUsBanner = () => {
 
 export default function Footer() {
   return (
-    <footer className="bg-background text-primary pt-10 ">
-      <div className="w-full p-1 flex flex-col gap-8">
-        {/* Top Section */}
-        <div className="flex flex-col md:flex-row md:justify-between items-start gap-8">
-          {/* Logo and Divider */}
+    <footer className="bg-background text-primary pt-20">
+      <div className="w-full flex flex-col gap-12 px-6 md:px-12">
+        <div className="flex flex-col md:flex-row md:justify-between items-start gap-12">
           <div className="flex flex-col gap-4">
-            <img src="/logo.svg" alt="MobiusEngine Logo" className="h-10" />
+            <img
+              src="/images/secondlogo.png"
+              alt="MobiusEngine Logo"
+              className="w-24 h-16 object-contain"
+            />
             <hr className="border-primary w-24" />
           </div>
 
-          {/* Info Sections */}
-          <div className="flex flex-wrap gap-12">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-12">
             <div>
               <h4 className="text-sm font-semibold mb-2">Address</h4>
               <p className="text-sm leading-relaxed">
@@ -52,35 +49,38 @@ export default function Footer() {
                 San Francisco, CA 94103
               </p>
             </div>
+
             <div>
               <h4 className="text-sm font-semibold mb-2">Email</h4>
               <a
                 href="mailto:finance@mobiusengine.ai"
-                className="text-sm underline hover:text-secondary transition"
+                className="text-sm hover:text-secondary transition"
               >
                 finance@mobiusengine.ai
               </a>
             </div>
+
             <div>
               <h4 className="text-sm font-semibold mb-2">Telephone</h4>
               <a
                 href="tel:6508896026"
-                className="text-sm underline hover:text-secondary transition"
+                className="text-sm hover:text-secondary transition"
               >
                 650-889-6026
               </a>
             </div>
+
             <div>
               <h4 className="text-sm font-semibold mb-2">Socials</h4>
-              <div className="flex items-center gap-2">
+              <div className="flex items-center gap-3">
                 <a
-                  href="#"
+                  href="https://www.linkedin.com/company/mobiusservices/posts/?feedView=all"
                   className="border border-primary rounded-full p-2 hover:bg-primary hover:text-white transition"
                 >
                   <LiaLinkedinIn className="w-4 h-4" />
                 </a>
                 <a
-                  href="#"
+                  href="https://www.linkedin.com/company/mobiusservices/posts/?feedView=all"
                   className="border border-primary rounded-full p-2 hover:bg-primary hover:text-white transition"
                 >
                   <LiaLinkedinIn className="w-4 h-4" />
@@ -90,8 +90,7 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Bottom Section */}
-        <div className="bg-primary text-white flex flex-col md:flex-row items-center justify-between  py-4 text-xs">
+        <div className="bg-primary text-white flex flex-col md:flex-row items-center justify-between w-full py-4 px-6 md:px-12 text-xs">
           <p>© 2023 Mobiusservices LLC</p>
           <div className="flex gap-6 mt-2 md:mt-0">
             <a href="#" className="hover:underline">

@@ -4,20 +4,17 @@ import { FaArrowRight } from "react-icons/fa";
 const Features = () => {
   return (
     <section className="bg-background py-20">
-      {/* Testimonials Section */}
       <div className="max-w-7xl mx-auto px-4 mb-20">
-        <h2 className="text-xl md:text-4xl font-medium text-primary mb-16 text-center">
+        <h2 className="text-xl md:text-4xl font-medium text-primary mb-16">
           What our clients have to say
         </h2>
 
-        {/* Cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 h-[350px]  mb-12">
           {[1, 2, 3].map((item) => (
             <div
               key={item}
               className="flex flex-col rounded-2xl border border-primary overflow-hidden relative shadow-sm hover:shadow-md transition-all duration-300"
             >
-              {/* Video Placeholder */}
               <div className="flex-1 flex items-center justify-center rounded-t-2xl bg-white p-10">
                 <button className="w-12 h-12 rounded-full bg-primary flex items-center justify-center hover:scale-110 transition-transform">
                   <svg
@@ -30,13 +27,11 @@ const Features = () => {
                 </button>
               </div>
 
-              {/* Text Section */}
               <div className="bg-primary text-white p-5 relative h-1/2">
                 <p className="text-sm leading-relaxed">
                   Holly is a <strong>senior executive</strong> who got over{" "}
                   <strong>10 job interviews</strong> and an offer she accepted.
                 </p>
-                {/* Arrow Icon */}
                 <div className="absolute bottom-4 right-4 bg-white rounded-full p-2">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -59,7 +54,6 @@ const Features = () => {
           ))}
         </div>
 
-        {/* Buttons */}
         <div className="flex justify-center gap-4">
           <button
             type="button"
@@ -77,16 +71,13 @@ const Features = () => {
         </div>
       </div>
 
-      {/* Why Choose Us Section */}
       <div className="py-20">
         <div className="max-w-5xl mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-secondary mb-16 text-center">
+          <h2 className="text-3xl md:text-4xl font-medium text-secondary mb-16">
             Why Choose Us?
           </h2>
 
-          {/* Features */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-20">
-            {/* Feature 1 */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-32 md:gap-20">
             <div className="p-8 border border-secondary rounded-2xl text-secondary bg-white hover:shadow-md transition-all duration-300">
               <div className="flex justify-center mb-8">
                 <img
@@ -104,7 +95,6 @@ const Features = () => {
               </p>
             </div>
 
-            {/* Feature 2 */}
             <div className="p-8 border border-secondary rounded-2xl text-secondary bg-white hover:shadow-md transition-all duration-300">
               <div className="flex justify-center mb-8">
                 <img
@@ -121,7 +111,6 @@ const Features = () => {
               </p>
             </div>
 
-            {/* Feature 3 */}
             <div className="p-8 border border-secondary rounded-2xl text-secondary bg-white hover:shadow-md transition-all duration-300">
               <div className="flex justify-center mb-8">
                 <img

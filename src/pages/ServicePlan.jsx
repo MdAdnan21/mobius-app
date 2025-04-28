@@ -5,7 +5,7 @@ function ServicePlan() {
   return (
     <>
       <div className="min-h-screen bg-background text-white py-20 px-4 flex flex-col items-center">
-        <h1 className="text-4xl font-bold text-primary mb-12">
+        <h1 className="text-4xl font-bold text-primary mb-12 items-start">
           Job Application Service Plans
         </h1>
 
