@@ -1,12 +1,85 @@
-# React + Vite
+MobiusEngine.ai Landing Page
+A responsive, modern landing page built using Vite and TailwindCSS for MobiusEngine.ai.
+It showcases services like resume building, job application assistance, career coaching, and more.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+✨ Tech Stack
+Vite (React)
 
-Currently, two official plugins are available:
+TailwindCSS
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+React Icons
 
-## Expanding the ESLint configuration
+🚀 Features
+Responsive design for all devices
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Dynamic service plans and pricing
+
+Testimonials and client success stories
+
+Custom resume building & coaching sections
+
+Professional footer with contact and social links
+
+🛠️ Project Setup
+Clone the repository
+
+bash
+Copy
+Edit
+git clone https://github.com/your-username/mobiusengine-landing-page.git
+cd mobiusengine-landing-page
+Install dependencies
+
+bash
+Copy
+Edit
+npm install
+
+# or
+
+yarn install
+Run development server
+
+bash
+Copy
+Edit
+npm run dev
+
+# or
+
+yarn dev
+Your app will be running at http://localhost:5173.
+
+📁 Folder Structure
+bash
+Copy
+Edit
+/src
+/components
+Navbar.jsx
+HeroSection.jsx
+AboutUs.jsx
+HowItWorks.jsx
+Testimonials.jsx
+PricingPlans.jsx
+ResumeServices.jsx
+Footer.jsx
+/assets
+logo.svg
+secondlogo.png
+icons/
+App.jsx
+main.jsx
+public/
+images/
+tailwind.config.js
+vite.config.js
+index.html
+📦 Deployment
+To create a production-ready build:
+
+bash
+Copy
+Edit
+npm run build
+You can deploy easily using platforms like Vercel, Netlify, or Cloudflare Pages.
